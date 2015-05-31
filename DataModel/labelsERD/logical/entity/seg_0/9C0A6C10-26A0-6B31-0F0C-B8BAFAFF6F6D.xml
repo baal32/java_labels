@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9C0A6C10-26A0-6B31-0F0C-B8BAFAFF6F6D" name="LabelAudit">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>36B287F8-9F1A-C173-EE8C-C934EA0808A1</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AuditID" id="F0DD47B3-1327-B6B7-D73D-38390B190855">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-25 19:02:52 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventLabelID" id="98B7254C-145C-EE89-D069-548DF9A17D5B">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>99AAD4DA-A8B7-3F35-5ADF-F92E3A68E268</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<referedAttribute>FBD3A6E8-0BF0-B4A6-368C-54A32E404BC0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LabelsGenerated" id="E0BE7D69-CCCF-BE2D-A085-8ADAD579F6A5">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>69BF9061-7591-3328-B609-C1D6101FD746</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AuditDate" id="B0684178-1136-D567-DE65-06D3618CEA53">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>F065D2A5-A58A-8E5E-3158-DCDE929455B8</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="User" id="10074D22-8965-824A-84E7-0127C597586D">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>FDF8F8A8-7B0D-0FAF-22AB-1FF2EA7A5CBF</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFA0B388-44A9-2738-19BF-00059DC596E3" name="LabelAudit PK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-25 19:01:05 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F0DD47B3-1327-B6B7-D73D-38390B190855</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6D80D1C-B4E2-9743-20DA-E90C12FCC0A4" name="LabelTokens">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:23:13 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TokenID" id="CF40DF2B-D781-7DF8-BD40-7AE55493EFFE">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:23:25 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TokenName" id="553407AB-9C95-E4DE-71FD-B8B46DE2946B">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:23:35 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Literal" id="6BC48DF1-AFE5-802B-4A13-EF182D445965">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:23:41 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TokenValue" id="A21E5EDB-938F-08F7-4857-0F64E02D3CDD">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:24:56 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Style" id="564D52F0-BB7B-1E11-52B1-2D0659B006AC">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-25 21:21:34 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="525AB8B0-E662-E454-1531-4D2477BC66E2" name="LabelTokensv1_PK">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:24:25 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CF40DF2B-D781-7DF8-BD40-7AE55493EFFE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

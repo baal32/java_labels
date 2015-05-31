@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00CBCB62-9DA3-CFA7-D51A-57F1AF64EE68" name="Labels">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:12:19 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LabelID" id="77C9AB6C-4524-E8BD-CC23-51BE8C66CB80">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:13:59 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DimensionWidth" id="5A702EF1-1D48-097A-78BC-3C44EE2A8FCD">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:13:59 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DimensionHeight" id="48FD2505-3873-7279-939A-4F4F22D5D088">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:13:59 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelDescription" id="8C73F17C-C710-327D-3025-660B029A32E6">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:13:59 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelName" id="92DCBA57-E3B6-1368-349A-48071818CBED">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>06B0407C-67C5-84EA-D5CD-B4D399312630</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDC7C587-2EC3-3B49-F8C1-EC969592A213" name="Labels_PK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:13:59 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77C9AB6C-4524-E8BD-CC23-51BE8C66CB80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C45D2406-FC60-956A-4E98-E6185190B729" name="Labels">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>00CBCB62-9DA3-CFA7-D51A-57F1AF64EE68</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="LabelID" id="442052C7-47FD-2561-F66E-B59CD222A6CF">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>77C9AB6C-4524-E8BD-CC23-51BE8C66CB80</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DimensionWidth" id="467C5C81-07EE-FFFD-9D81-CFAD2A5B14C4">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>5A702EF1-1D48-097A-78BC-3C44EE2A8FCD</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DimensionHeight" id="BAF37996-D098-1012-31E8-5D30C0C19C2C">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>48FD2505-3873-7279-939A-4F4F22D5D088</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LabelDescription" id="479ABE13-CB91-73D9-DDE4-F0005DEC4788">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>8C73F17C-C710-327D-3025-660B029A32E6</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LabelName" id="06B0407C-67C5-84EA-D5CD-B4D399312630">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:50 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62739835-4676-0F90-FBA4-19AF5C58DDEF" name="Labels PK">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>FDC7C587-2EC3-3B49-F8C1-EC969592A213</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>442052C7-47FD-2561-F66E-B59CD222A6CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

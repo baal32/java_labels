@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A8D9C6C-7EAD-D034-5C3A-6CF88FEBFDB4" name="LabelLinesMapping">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>D227FDEB-363E-C48A-EA7E-9BFFD1923DDD</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LabelLinesMappingID" id="0E666001-7607-5406-60FD-4BBBFCB77B59">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>C7386387-ACB5-1999-4540-58172705F966</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelID" id="2D4D30B8-524B-E614-F1DC-6CCE2467F611">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>00A3B4D4-DFA2-BACB-F3AB-E08D315F7C36</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>77C9AB6C-4524-E8BD-CC23-51BE8C66CB80</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9223E28F-7547-0B6E-B4A2-7DD50BCB09D1" referredColumn="77C9AB6C-4524-E8BD-CC23-51BE8C66CB80"/>
+</associations>
+</Column>
+<Column name="LineID" id="EDC0F426-4995-48B2-366A-093098725937">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>87F3F353-8AF3-F57B-8F85-8A6A8A95D11C</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>15CFCF45-9999-A5BA-49DC-60E686C16560</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7ABAF71-5AB6-0A7B-012D-42DF3AE1137C" referredColumn="15CFCF45-9999-A5BA-49DC-60E686C16560"/>
+</associations>
+</Column>
+<Column name="LineNumber" id="6AFC226C-3F98-7407-7C49-33BFBEB1F592">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>5E2A4666-E661-0E72-85DF-1772E315DF08</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C21632FE-5839-1088-390D-C37838B79547" name="LabelLinesMapping_PK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>06232D41-BEEA-9C24-690D-2D92A6B8322C</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E666001-7607-5406-60FD-4BBBFCB77B59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B08C8ABA-F23F-D569-9C6B-C10CF7B03183" name="LabelLinesMapping_Labels_FK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>E176EA6C-0BA2-8FA8-07C3-08FC26905F96</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D4D30B8-524B-E614-F1DC-6CCE2467F611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA39332E-A294-5371-722D-1F4063F123BF" name="LblLinesMapping_LblLines_FK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>2F3369BF-8821-CA09-1091-5A093BCF4C6A</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDC0F426-4995-48B2-366A-093098725937"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LabelLinesMapping LabelLines FK" directorySegmentName="seg_0" id="2F3369BF-8821-CA09-1091-5A093BCF4C6A">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-25 19:32:23 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<sourcePk>E58FA75E-AEEA-EC3A-5AF5-077AFF4319F7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2D193219-BA64-94F5-1DB7-17D4B25FE2CD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D227FDEB-363E-C48A-EA7E-9BFFD1923DDD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

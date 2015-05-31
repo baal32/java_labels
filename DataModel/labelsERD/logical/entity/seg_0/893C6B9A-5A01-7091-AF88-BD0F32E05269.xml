@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="893C6B9A-5A01-7091-AF88-BD0F32E05269" name="Events">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>9FD0F1CF-6C6D-2B7F-0948-AC498FE67962</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EventID" id="54388CE1-9CCB-0307-7510-3C86990CE21B">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>33D47975-2EB4-65B1-4697-97EC54E6B23B</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventName" id="89B22D10-2EC8-7A5D-620C-23C31AA76E90">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>692212B4-54D5-4C3C-BB0E-B1850C6344A7</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="843CD179-06A3-E431-A96E-26062CB29E33" name="Events PK">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>2F84ED55-B5C7-424D-505D-C8B60881B440</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54388CE1-9CCB-0307-7510-3C86990CE21B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36B287F8-9F1A-C173-EE8C-C934EA0808A1" name="LabelAudit">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:23:06 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AuditID" id="467733A0-A157-101D-8A21-A4B0F704D474">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>F0DD47B3-1327-B6B7-D73D-38390B190855</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EventLabelID" id="761D4905-81D4-BDD4-2353-7F7E3D1F0DE0">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 19:59:36 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CC71EAEA-D389-139F-286A-1B3E1E173438</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E913AD9E-7C8E-F974-DEED-1B682ADAC053" referredColumn="CC71EAEA-D389-139F-286A-1B3E1E173438"/>
+</associations>
+</Column>
+<Column name="LabelsGenerated" id="69BF9061-7591-3328-B609-C1D6101FD746">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 19:59:36 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AuditDate" id="F065D2A5-A58A-8E5E-3158-DCDE929455B8">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 19:59:36 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User" id="FDF8F8A8-7B0D-0FAF-22AB-1FF2EA7A5CBF">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 19:59:36 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34CEE30D-87A6-E7BC-EF2E-E1F599B11819" name="LabelAudit_PK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 02:36:38 UTC</createdTime>
+<generatorID>BFA0B388-44A9-2738-19BF-00059DC596E3</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="467733A0-A157-101D-8A21-A4B0F704D474"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7ED916DB-B91A-A065-52D8-A14BF2D8A783" name="LabelAudit_EventLabel_FK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-26 03:10:06 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="761D4905-81D4-BDD4-2353-7F7E3D1F0DE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

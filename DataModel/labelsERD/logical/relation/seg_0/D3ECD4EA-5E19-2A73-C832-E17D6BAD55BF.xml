@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EventLabels_Labels_FK" directorySegmentName="seg_0" id="D3ECD4EA-5E19-2A73-C832-E17D6BAD55BF">
+<createdBy>John</createdBy>
+<createdTime>2015-05-25 01:20:29 UTC</createdTime>
+<generatorID>8F26DC0D-587D-869D-A9A3-A1DD879A0763</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<sourcePk>62739835-4676-0F90-FBA4-19AF5C58DDEF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C45D2406-FC60-956A-4E98-E6185190B729</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>289989D6-2BBB-9618-BAC9-AC4564638D3D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

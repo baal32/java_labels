@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9FD0F1CF-6C6D-2B7F-0948-AC498FE67962" name="Events">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:14:43 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EventID" id="33D47975-2EB4-65B1-4697-97EC54E6B23B">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:15:25 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EventName" id="692212B4-54D5-4C3C-BB0E-B1850C6344A7">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:15:25 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F84ED55-B5C7-424D-505D-C8B60881B440" name="Events_PK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-24 06:15:25 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33D47975-2EB4-65B1-4697-97EC54E6B23B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

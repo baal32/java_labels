@@ -28,7 +28,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="EventLabelID" id="98B7254C-145C-EE89-D069-548DF9A17D5B">
 <createdBy>John</createdBy>
@@ -43,7 +42,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LabelsGenerated" id="E0BE7D69-CCCF-BE2D-A085-8ADAD579F6A5">
 <createdBy>John</createdBy>
@@ -59,7 +57,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="AuditDate" id="B0684178-1136-D567-DE65-06D3618CEA53">
 <createdBy>John</createdBy>
@@ -74,7 +71,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="User" id="10074D22-8965-824A-84E7-0127C597586D">
 <createdBy>John</createdBy>
@@ -90,7 +86,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="065CA746-11E3-87BD-E7E6-28DC0BE2DCB0" name="Labels">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>C45D2406-FC60-956A-4E98-E6185190B729</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LabelID" id="E04C3F7E-7293-CB54-B944-2C8E0AE64B21">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>442052C7-47FD-2561-F66E-B59CD222A6CF</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelDescription" id="F90FFFAE-7E6D-B5E1-A7E6-3D29412BE6C9">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>479ABE13-CB91-73D9-DDE4-F0005DEC4788</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelName" id="F5E95A3C-FED2-77B3-10A9-D05295435253">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>06B0407C-67C5-84EA-D5CD-B4D399312630</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelFile" id="253AFBA0-AC8E-419B-F9F5-B7BAA8EA769E">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>06AA284D-9BEC-4656-CB4D-4BAF5771B172</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MaxLines" id="57ACF42F-4CC6-4BD6-BF89-75B141ABDC89">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 22:16:28 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="276A03FE-49B7-CCF5-903E-6A1097D0BC8B" name="Labels_PK">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>62739835-4676-0F90-FBA4-19AF5C58DDEF</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E04C3F7E-7293-CB54-B944-2C8E0AE64B21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB304D2A-7D34-084C-39BD-07FE2CF859B4" name="LabelLines_Labels_FK">
+<createdBy>votec</createdBy>
+<createdTime>2015-06-04 05:34:36 UTC</createdTime>
+<generatorID>62739835-4676-0F90-FBA4-19AF5C58DDEF</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<containerWithKeyObject>0D2A1304-DD05-82C0-9AFC-C3963716E804</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>BABFBD65-C602-83D4-4355-3C09C19AC860</localFKIndex>
+<keyObject>276A03FE-49B7-CCF5-903E-6A1097D0BC8B</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

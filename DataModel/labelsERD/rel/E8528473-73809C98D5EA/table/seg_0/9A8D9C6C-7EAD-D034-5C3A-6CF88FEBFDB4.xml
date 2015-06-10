@@ -6,6 +6,7 @@
 <ownerDesignName>labelsERD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
 <Column name="LabelLinesMappingID" id="0E666001-7607-5406-60FD-4BBBFCB77B59">
 <createdBy>admin</createdBy>
@@ -15,6 +16,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -27,7 +29,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>77C9AB6C-4524-E8BD-CC23-51BE8C66CB80</delegate>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="9223E28F-7547-0B6E-B4A2-7DD50BCB09D1" referredColumn="77C9AB6C-4524-E8BD-CC23-51BE8C66CB80"/>
@@ -41,7 +43,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>15CFCF45-9999-A5BA-49DC-60E686C16560</delegate>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="C7ABAF71-5AB6-0A7B-012D-42DF3AE1137C" referredColumn="15CFCF45-9999-A5BA-49DC-60E686C16560"/>
@@ -57,7 +59,22 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EventLabels_EventLabelID" id="3FE8FFB3-0204-289E-1EDA-232C23854301">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-31 03:08:38 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2C59062-616A-BE72-6481-AC2797C2D77B" referredColumn="CC71EAEA-D389-139F-286A-1B3E1E173438"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -93,6 +110,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EDC0F426-4995-48B2-366A-093098725937"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A703B449-6B1A-83C8-6C8F-493537FB1F6F" name="LabelLinesMapping_EventLabels_FK">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-31 03:08:38 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FE8FFB3-0204-289E-1EDA-232C23854301"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

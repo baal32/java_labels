@@ -7,9 +7,9 @@
    <object objectType="Table" objectID="9A8D9C6C-7EAD-D034-5C3A-6CF88FEBFDB4" name="LabelLinesMapping" seqName="seg_0"/>
    <object objectType="Table" objectID="DA607517-45E8-4267-33A0-8A99DEE06B21" name="LabelTokens" seqName="seg_0"/>
    <object objectType="Table" objectID="00CBCB62-9DA3-CFA7-D51A-57F1AF64EE68" name="Labels" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="8409DB1A-7C58-6781-40BD-4AA1ADB4C5B5" name="EventLabels_Events_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="8F26DC0D-587D-869D-A9A3-A1DD879A0763" name="EventLabels_Labels_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="E913AD9E-7C8E-F974-DEED-1B682ADAC053" name="LabelAudit_EventLabel_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="9223E28F-7547-0B6E-B4A2-7DD50BCB09D1" name="LabelLinesMapping_Labels_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="C7ABAF71-5AB6-0A7B-012D-42DF3AE1137C" name="LblLinesMapping_LblLines_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8409DB1A-7C58-6781-40BD-4AA1ADB4C5B5" name="EventLabels_Events_FK" seqName="seg_0" containerID="9B747731-3017-9572-EEBF-5AC9BEC4FC35" refContainerID="9FD0F1CF-6C6D-2B7F-0948-AC498FE67962"/>
+   <object objectType="FKIndexAssociation" objectID="F2C59062-616A-BE72-6481-AC2797C2D77B" name="LabelLinesMapping_EventLabels_FK" seqName="seg_0" containerID="9A8D9C6C-7EAD-D034-5C3A-6CF88FEBFDB4" refContainerID="9B747731-3017-9572-EEBF-5AC9BEC4FC35"/>
+   <object objectType="FKIndexAssociation" objectID="E913AD9E-7C8E-F974-DEED-1B682ADAC053" name="LabelAudit_EventLabel_FK" seqName="seg_0" containerID="36B287F8-9F1A-C173-EE8C-C934EA0808A1" refContainerID="9B747731-3017-9572-EEBF-5AC9BEC4FC35"/>
+   <object objectType="FKIndexAssociation" objectID="9223E28F-7547-0B6E-B4A2-7DD50BCB09D1" name="LabelLinesMapping_Labels_FK" seqName="seg_0" containerID="9A8D9C6C-7EAD-D034-5C3A-6CF88FEBFDB4" refContainerID="00CBCB62-9DA3-CFA7-D51A-57F1AF64EE68"/>
+   <object objectType="FKIndexAssociation" objectID="C7ABAF71-5AB6-0A7B-012D-42DF3AE1137C" name="LblLinesMapping_LblLines_FK" seqName="seg_0" containerID="9A8D9C6C-7EAD-D034-5C3A-6CF88FEBFDB4" refContainerID="3BBE5A66-5051-1536-8DEE-8DF44D30E65B"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

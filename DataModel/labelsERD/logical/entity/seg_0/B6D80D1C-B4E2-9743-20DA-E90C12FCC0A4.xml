@@ -27,7 +27,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="TokenName" id="553407AB-9C95-E4DE-71FD-B8B46DE2946B">
 <createdBy>John</createdBy>
@@ -42,7 +41,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Literal" id="6BC48DF1-AFE5-802B-4A13-EF182D445965">
 <createdBy>John</createdBy>
@@ -57,7 +55,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="TokenValue" id="A21E5EDB-938F-08F7-4857-0F64E02D3CDD">
 <createdBy>John</createdBy>
@@ -72,7 +69,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Style" id="564D52F0-BB7B-1E11-52B1-2D0659B006AC">
 <createdBy>admin</createdBy>
@@ -87,11 +83,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="525AB8B0-E662-E454-1531-4D2477BC66E2" name="LabelTokensv1_PK">
+<identifier id="525AB8B0-E662-E454-1531-4D2477BC66E2" name="LabelTokens_PK">
 <createdBy>John</createdBy>
 <createdTime>2015-05-25 01:24:25 UTC</createdTime>
 <ownerDesignName>labelsERD</ownerDesignName>

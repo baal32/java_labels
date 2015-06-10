@@ -5,6 +5,7 @@
 <ownerDesignName>labelsERD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
 <Column name="LabelID" id="77C9AB6C-4524-E8BD-CC23-51BE8C66CB80">
 <createdBy>admin</createdBy>
@@ -13,28 +14,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DimensionWidth" id="5A702EF1-1D48-097A-78BC-3C44EE2A8FCD">
-<createdBy>admin</createdBy>
-<createdTime>2015-05-24 06:13:59 UTC</createdTime>
-<ownerDesignName>labelsERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT020</logicalDatatype>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DimensionHeight" id="48FD2505-3873-7279-939A-4F4F22D5D088">
-<createdBy>admin</createdBy>
-<createdTime>2015-05-24 06:13:59 UTC</createdTime>
-<ownerDesignName>labelsERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT020</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="LabelDescription" id="8C73F17C-C710-327D-3025-660B029A32E6">
@@ -46,6 +28,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="LabelName" id="92DCBA57-E3B6-1368-349A-48071818CBED">
@@ -58,6 +41,18 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelFile" id="F8223646-0FC9-3E05-B89B-8713A1C45CB1">
+<createdBy>admin</createdBy>
+<createdTime>2015-05-31 03:07:17 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

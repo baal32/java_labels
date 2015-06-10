@@ -1,0 +1,79 @@
+DROP TABLE LabelAudits;
+
+
+DROP TABLE LabelEventMap;
+
+
+DROP TABLE LabelEvents;
+
+
+DROP TABLE LabelLines;
+
+
+DROP TABLE LabelTokens;
+
+
+DROP TABLE Labels;
+
+
+
+
+CREATE TABLE VSAFE.LabelAudits
+  (
+    LabelAuditID    INT NOT NULL ,
+    LabelEventMapID INT NOT NULL ,
+    LabelsGenerated NUMERIC (4) ,
+    ActivityDate    TIMESTAMP,
+    AuditUser       VARCHAR (50),
+	PRIMARY KEY (LabelAuditID)
+  ) ;
+
+
+CREATE TABLE VSAFE.LabelEventMap
+  (
+    LabelEventMapID INT NOT NULL ,
+    LabelEventID    INT NOT NULL ,
+    LabelID         INT NOT NULL ,
+    LabelCount      NUMERIC (4),
+	PRIMARY KEY (LabelEventMapID )
+  ) ;
+
+
+CREATE TABLE VSAFE.LabelEvents
+  (
+    LabelEventID INT NOT NULL ,
+    EventName    VARCHAR (100),
+	PRIMARY KEY (LabelEventID  )
+  ) ;
+
+
+CREATE TABLE VSAFE.LabelLines
+  (
+    LabelLineID INT NOT NULL ,
+    LabelID     INT NOT NULL ,
+    LineText    VARCHAR (100) NOT NULL ,
+    LineNUMERIC  NUMERIC (2),
+	PRIMARY KEY (LabelLineID  )
+  ) ;
+
+
+CREATE TABLE VSAFE.LabelTokens
+  (
+    LabelTokenID INT NOT NULL ,
+    TokenName    VARCHAR (50) ,
+    Literal      NUMERIC (1) ,
+    TokenValue   VARCHAR (50),
+	PRIMARY KEY (LabelTokenID  )
+  ) ;
+
+
+CREATE TABLE VSAFE.Labels
+  (
+    LabelID          INT NOT NULL ,
+    LabelDescription VARCHAR (100) ,
+    LabelName        VARCHAR (100) ,
+    LabelFile BLOB ,
+    MaxLines NUMERIC (2),
+	PRIMARY KEY (LabelID  )
+  ) ;
+

@@ -7,9 +7,9 @@
    <object objectType="Entity" objectID="B6D80D1C-B4E2-9743-20DA-E90C12FCC0A4" name="LabelTokens" seqName="seg_0"/>
    <object objectType="Entity" objectID="C45D2406-FC60-956A-4E98-E6185190B729" name="Labels" seqName="seg_0"/>
    <object objectType="Entity" objectID="D227FDEB-363E-C48A-EA7E-9BFFD1923DDD" name="LabelLinesMapping" seqName="seg_0"/>
-   <object objectType="Relation" objectID="2F3369BF-8821-CA09-1091-5A093BCF4C6A" name="LabelLinesMapping LabelLines FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2F3369BF-8821-CA09-1091-5A093BCF4C6A" name="LblLinesMapping LblLines FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="81FFFBE0-25B7-438A-878C-F1C2F61A9D30" name="EventLabels_Events_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="99AAD4DA-A8B7-3F35-5ADF-F92E3A68E268" name="LabelAudit_EventLabels_FKv1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="99AAD4DA-A8B7-3F35-5ADF-F92E3A68E268" name="LabelAudit EventLabel FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="D3ECD4EA-5E19-2A73-C832-E17D6BAD55BF" name="EventLabels_Labels_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="E176EA6C-0BA2-8FA8-07C3-08FC26905F96" name="LabelLinesMapping Labels FK" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

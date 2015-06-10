@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D2A1304-DD05-82C0-9AFC-C3963716E804" name="LabelLines">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>2D193219-BA64-94F5-1DB7-17D4B25FE2CD</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LabelLineID" id="C14A9CA3-C7BB-CB64-DE4D-540EE935B964">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>B6BC4404-AE74-758C-D52E-22D658715779</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelID" id="8D5F11F1-D82F-D27F-A0C5-0AA08796276A">
+<createdBy>votec</createdBy>
+<createdTime>2015-06-04 05:32:48 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>E04C3F7E-7293-CB54-B944-2C8E0AE64B21</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB304D2A-7D34-084C-39BD-07FE2CF859B4" referredColumn="E04C3F7E-7293-CB54-B944-2C8E0AE64B21"/>
+</associations>
+</Column>
+<Column name="LineText" id="D5B41C08-6824-873F-3DC7-A4B714582EC8">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>6B61908E-CA0A-A3FB-6331-0E6796FDDB29</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LineNumber" id="61DE3054-E8E2-C2FE-6E49-A1980E21028C">
+<createdBy>votec</createdBy>
+<createdTime>2015-06-04 05:33:12 UTC</createdTime>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA701A93-F12E-8F25-29C1-696C037BE46D" name="LabelLines_PK">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>E58FA75E-AEEA-EC3A-5AF5-077AFF4319F7</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C14A9CA3-C7BB-CB64-DE4D-540EE935B964"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BABFBD65-C602-83D4-4355-3C09C19AC860" name="LabelLines_Labels_FK">
+<createdBy>votec</createdBy>
+<createdTime>2015-06-04 05:34:36 UTC</createdTime>
+<generatorID>62739835-4676-0F90-FBA4-19AF5C58DDEF</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D5F11F1-D82F-D27F-A0C5-0AA08796276A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,2 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.relational.RelationalDesign/>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="E70C5F79-107D-1E30-3328-96FE694B5328" name="LabelAudits" seqName="seg_0"/>
+   <object objectType="Table" objectID="47B9E704-3802-EABE-B1A2-9997B494A42F" name="LabelEventMap" seqName="seg_0"/>
+   <object objectType="Table" objectID="72837CB4-67AE-1628-7D1F-E7CB64E8ED37" name="LabelEvents" seqName="seg_0"/>
+   <object objectType="Table" objectID="0D2A1304-DD05-82C0-9AFC-C3963716E804" name="LabelLines" seqName="seg_0"/>
+   <object objectType="Table" objectID="0B727E68-7FCF-7EF6-1B66-6C6B597EB409" name="LabelTokens" seqName="seg_0"/>
+   <object objectType="Table" objectID="065CA746-11E3-87BD-E7E6-28DC0BE2DCB0" name="Labels" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9F322FAD-D708-4EE7-B1B7-5187F754B12A" name="EventLabels_Events_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="02B29670-4FA9-B75A-7724-8DBEECCB8FFD" name="EventLabels_Labels_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="759FDB53-211A-EE3E-962A-2B39EFC4841B" name="LabelAudit_EventLabels_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BB304D2A-7D34-084C-39BD-07FE2CF859B4" name="LabelLines_Labels_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

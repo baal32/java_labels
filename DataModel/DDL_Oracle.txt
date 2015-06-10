@@ -1,0 +1,97 @@
+CREATE TABLE LabelAudits
+  (
+    LabelAuditID    INTEGER NOT NULL ,
+    LabelEventMapID INTEGER NOT NULL ,
+    LabelsGenerated NUMBER (4) ,
+    ActivityDate    DATE ,
+    AuditUser       VARCHAR2 (50)
+  ) ;
+ALTER TABLE LabelAudits ADD CONSTRAINT LabelAudit_PK PRIMARY KEY ( LabelAuditID ) ;
+
+CREATE TABLE LabelEventMap
+  (
+    LabelEventMapID INTEGER NOT NULL ,
+    LabelEventID    INTEGER NOT NULL ,
+    LabelID         INTEGER NOT NULL ,
+    LabelCount      NUMBER (4)
+  ) ;
+ALTER TABLE LabelEventMap ADD CONSTRAINT EventLabels_PK PRIMARY KEY ( LabelEventMapID ) ;
+
+CREATE TABLE LabelEvents
+  (
+    LabelEventID INTEGER NOT NULL ,
+    EventName    VARCHAR2 (100)
+  ) ;
+ALTER TABLE LabelEvents ADD CONSTRAINT Events_PK PRIMARY KEY ( LabelEventID ) ;
+
+CREATE TABLE LabelLines
+  (
+    LabelLineID INTEGER NOT NULL ,
+    LabelID     INTEGER NOT NULL ,
+    LineText    VARCHAR2 (100) NOT NULL ,
+    LineNumber  NUMBER (2)
+  ) ;
+ALTER TABLE LabelLines ADD CONSTRAINT LabelLines_PK PRIMARY KEY ( LabelLineID ) ;
+
+CREATE TABLE LabelTokens
+  (
+    LabelTokenID INTEGER NOT NULL ,
+    TokenName    VARCHAR2 (50) ,
+    Literal      NUMBER (1) ,
+    TokenValue   VARCHAR2 (50)
+  ) ;
+ALTER TABLE LabelTokens ADD CONSTRAINT LabelTokens_PK PRIMARY KEY ( LabelTokenID ) ;
+
+CREATE TABLE Labels
+  (
+    LabelID          INTEGER NOT NULL ,
+    LabelDescription VARCHAR2 (100) ,
+    LabelName        VARCHAR2 (100) ,
+    LabelFile BLOB ,
+    MaxLines NUMBER (2)
+  ) ;
+ALTER TABLE Labels ADD CONSTRAINT Labels_PK PRIMARY KEY ( LabelID ) ;
+
+ALTER TABLE LabelEventMap ADD CONSTRAINT EventLabels_Events_FK FOREIGN KEY ( LabelEventID ) REFERENCES LabelEvents ( LabelEventID ) ;
+
+ALTER TABLE LabelEventMap ADD CONSTRAINT EventLabels_Labels_FK FOREIGN KEY ( LabelID ) REFERENCES Labels ( LabelID ) ;
+
+ALTER TABLE LabelAudits ADD CONSTRAINT LabelAudit_EventLabels_FK FOREIGN KEY ( LabelEventMapID ) REFERENCES LabelEventMap ( LabelEventMapID ) ;
+
+ALTER TABLE LabelLines ADD CONSTRAINT LabelLines_Labels_FK FOREIGN KEY ( LabelID ) REFERENCES Labels ( LabelID ) ;
+
+
+-- Oracle SQL Developer Data Modeler Summary Report: 
+-- 
+-- CREATE TABLE                             6
+-- CREATE INDEX                             0
+-- ALTER TABLE                             10
+-- CREATE VIEW                              0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

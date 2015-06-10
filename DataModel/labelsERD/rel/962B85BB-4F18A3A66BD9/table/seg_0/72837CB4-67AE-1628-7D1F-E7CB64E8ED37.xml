@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72837CB4-67AE-1628-7D1F-E7CB64E8ED37" name="LabelEvents">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>893C6B9A-5A01-7091-AF88-BD0F32E05269</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LabelEventID" id="B26ECFB2-227C-570A-2D18-369685BB0223">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>54388CE1-9CCB-0307-7510-3C86990CE21B</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EventName" id="0CEA9EE4-977A-A0AF-992D-1ECFB47EC631">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>89B22D10-2EC8-7A5D-620C-23C31AA76E90</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8431AEA2-25A7-9069-09B5-8CA16EDEBD91" name="Events_PK">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>843CD179-06A3-E431-A96E-26062CB29E33</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B26ECFB2-227C-570A-2D18-369685BB0223"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

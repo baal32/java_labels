@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E70C5F79-107D-1E30-3328-96FE694B5328" name="LabelAudits">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>9C0A6C10-26A0-6B31-0F0C-B8BAFAFF6F6D</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LabelAuditID" id="99BF93F2-5668-6A8E-114E-6EE6F6C87CC6">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>F0DD47B3-1327-B6B7-D73D-38390B190855</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LabelEventMapID" id="34121D0F-1D88-1D49-A554-23E9E13CB2D7">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>98B7254C-145C-EE89-D069-548DF9A17D5B</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>18243D0F-CAB0-8791-FB3C-2807598A62E0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="759FDB53-211A-EE3E-962A-2B39EFC4841B" referredColumn="18243D0F-CAB0-8791-FB3C-2807598A62E0"/>
+</associations>
+</Column>
+<Column name="LabelsGenerated" id="45EC9189-6E83-485A-39C7-90C64713F1A7">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>E0BE7D69-CCCF-BE2D-A085-8ADAD579F6A5</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ActivityDate" id="298604F3-767E-C261-C727-918A245FFD68">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>B0684178-1136-D567-DE65-06D3618CEA53</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AuditUser" id="FB786F63-B8B3-A53D-8D9C-027CE27155AA">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>10074D22-8965-824A-84E7-0127C597586D</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8007BB7C-A84A-9E42-6F9D-8045992A1F71" name="LabelAudit_PK">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>BFA0B388-44A9-2738-19BF-00059DC596E3</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99BF93F2-5668-6A8E-114E-6EE6F6C87CC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF6E1725-883D-9C66-58E7-BC8640EDFB8B" name="LabelAudit_EventLabels_FK">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:40:14 UTC</createdTime>
+<generatorID>99AAD4DA-A8B7-3F35-5ADF-F92E3A68E268</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34121D0F-1D88-1D49-A554-23E9E13CB2D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

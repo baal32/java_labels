@@ -27,7 +27,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LabelID" id="00A3B4D4-DFA2-BACB-F3AB-E08D315F7C36">
 <createdBy>John</createdBy>
@@ -42,7 +41,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LineID" id="87F3F353-8AF3-F57B-8F85-8A6A8A95D11C">
 <createdBy>John</createdBy>
@@ -57,7 +55,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LineNumber" id="5E2A4666-E661-0E72-85DF-1772E315DF08">
 <createdBy>John</createdBy>
@@ -72,9 +69,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="LabelID2" id="F8563AA1-C2C6-7926-3369-B85477DFFBF2">
+<Attribute name="LabelID1" id="F8563AA1-C2C6-7926-3369-B85477DFFBF2">
 <createdBy>admin</createdBy>
 <createdTime>2015-05-25 19:31:43 UTC</createdTime>
 <generatorID>E176EA6C-0BA2-8FA8-07C3-08FC26905F96</generatorID>
@@ -88,9 +84,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="LineID2" id="C3B57A07-98E9-CF3A-7299-1229F2A7C386">
+<Attribute name="LineID1" id="C3B57A07-98E9-CF3A-7299-1229F2A7C386">
 <createdBy>admin</createdBy>
 <createdTime>2015-05-25 19:32:23 UTC</createdTime>
 <generatorID>2F3369BF-8821-CA09-1091-5A093BCF4C6A</generatorID>
@@ -104,7 +99,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

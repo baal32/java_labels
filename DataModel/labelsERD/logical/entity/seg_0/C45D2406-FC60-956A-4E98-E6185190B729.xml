@@ -29,7 +29,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DimensionWidth" id="467C5C81-07EE-FFFD-9D81-CFAD2A5B14C4">
 <createdBy>John</createdBy>
@@ -44,7 +43,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DimensionHeight" id="BAF37996-D098-1012-31E8-5D30C0C19C2C">
 <createdBy>John</createdBy>
@@ -59,7 +57,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LabelDescription" id="479ABE13-CB91-73D9-DDE4-F0005DEC4788">
 <createdBy>John</createdBy>
@@ -75,7 +72,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LabelName" id="06B0407C-67C5-84EA-D5CD-B4D399312630">
 <createdBy>John</createdBy>
@@ -90,7 +86,20 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LabelFile" id="06AA284D-9BEC-4656-CB4D-4BAF5771B172">
+<createdBy>votec</createdBy>
+<createdTime>2015-05-31 21:39:40 UTC</createdTime>
+<generatorID>539992DE-1489-C37D-40A2-6C5726B40632</generatorID>
+<ownerDesignName>labelsERD</ownerDesignName>
+<engineerTo>
+<item key="962B85BB-A5E7-8067-75A3-4F18A3A66BD9" value="true"/>
+<item key="E8528473-EBFC-581F-C158-73809C98D5EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,44 +1,12 @@
 SET CURRENT SCHEMA VSAFE;
 
+DROP VIEW  LabelAudits_VW;
 DROP TABLE LabelAudits;
-
-
 DROP TABLE LabelEventMap;
-
-
 DROP TABLE LabelEvents;
-
-
 DROP TABLE LabelLines;
-
-
 DROP TABLE LabelTokens;
-
-
 DROP TABLE Labels;
-
-
-
-
-CREATE TABLE VSAFE.LabelAudits
-  (
-    LabelAuditID    INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
-	EventID			INT,
-	EventName 		VARCHAR(100),
-	LabelID			INT,
-	LabelName		VARCHAR(100),
-	VoterID			INT,
-	Special			BOOLEAN,
-	Provisional		BOOLEAN,
-	OutOfCounty		BOOLEAN,
-    LabelsGenerated NUMERIC (4) ,
-    ActivityDate    TIMESTAMP,
-    AuditUser       VARCHAR (50),
-	ResultStatus	VARCHAR(50),
-	ResultDescription	BLOB,
-	PRIMARY KEY (LabelAuditID)
-  ) ;
-
 
 CREATE TABLE VSAFE.LabelEventMap
   (
@@ -88,7 +56,30 @@ CREATE TABLE VSAFE.Labels
 	PRIMARY KEY (LabelID  )
   ) ;
 
+ CREATE TABLE VSAFE.LabelAudits
+  (
+    LabelAuditID    INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+	LabelEventID			INT,
+	LabelID			INT,
+	VoterID			INT,
+	Special			BOOLEAN,
+	Provisional		BOOLEAN,
+	OutOfCounty		BOOLEAN,
+    LabelsGenerated NUMERIC (4) ,
+    ActivityDate    TIMESTAMP,
+    AuditUser       VARCHAR (50),
+	ResultStatus	VARCHAR(50),
+	ResultDescription	BLOB,
+	EventMessage	VARCHAR(200),
+	PRIMARY KEY (LabelAuditID)
+  ) ;
 
+CREATE VIEW VSAFE.LabelAudits_VW AS 
+	SELECT EVENTNAME, LABELNAME, VOTERID, SPECIAL, PROVISIONAL, OUTOFCOUNTY, LABELSGENERATED, ACTIVITYDATE, AUDITUSER, RESULTSTATUS, RESULTDESCRIPTION
+		FROM VSAFE.LABELAUDITS A 
+			JOIN VSAFE.LABELS B ON A.LABELID = B.LABELID 
+			JOIN VSAFE.LABELEVENTS C ON A.LABELEVENTID = C.LABELEVENTID
+	;		
   
 
 Insert into LABELEVENTS (LABELEVENTID,EVENTNAME) values (1,'Minnetonka All Labels');
@@ -99,7 +90,7 @@ Insert into LABELEVENTS (LABELEVENTID,EVENTNAME) values (4,'Minnetonka Special L
 
 Insert into LABELS (LABELID,LABELDESCRIPTION,LABELNAME,MAXLINES, LABELFILE) values (1,'VRA Label','VRA Label',7,'C:/VOTESAFE/BrotherLabel-ExtraLine.lbl');
 Insert into LABELS (LABELID,LABELDESCRIPTION,LABELNAME,MAXLINES, LABELFILE) values (2,'No Conflict','Regular Check In - No Conflict',6,'C:/VOTESAFE/BrotherLabel.lbl');
-Insert into LABELS (LABELID,LABELDESCRIPTION,LABELNAME,MAXLINES, LABELFILE) values (3,'Conflict','Regular Check In - Conflict',6,'C:/VOTESAFE/BrotherLabel');
+Insert into LABELS (LABELID,LABELDESCRIPTION,LABELNAME,MAXLINES, LABELFILE) values (3,'Conflict','Regular Check In - Conflict',6,'C:/VOTESAFE/BrotherLabel.lbl');
 
 
 Insert into LABELEVENTMAP (LABELEVENTMAPID,LABELEVENTID,LABELID,LABELCOUNT) values (1,1,1,1);
